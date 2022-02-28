@@ -1,0 +1,80 @@
+body{
+    background-color: #F2F2F2;
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.4em;
+}
+
+
+#frameBoard{
+    background-color: white;
+    border-radius: 10px;
+    width: 475px;
+    height: 750px;
+    margin: 0 20px 0 20px;
+}
+
+#menuLeft{
+    width: 115px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menuRight{
+    width: 115px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#casesButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 90px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    background-color: #7D7676;
+}
+
+#casesButtons a{
+    text-decoration: none;
+}
+
+#casesButtons:hover{
+    color:  #7D7676;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+#menuLeft p{
+    font-family: roboto, sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    padding-top: 5px;
+
+
+}
+
+@media screen and (max-height: 900px){
+
+    #container{
+        margin-top: 2em;
+
+    }
+}
