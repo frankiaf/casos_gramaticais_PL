@@ -31,7 +31,7 @@
 
 /* ************* SIngular ************* */
 
-#containerSingular {
+.container {
   margin-bottom: 20px;
   display: grid;
   gap: 3px;
@@ -158,6 +158,115 @@
   grid-area: L;
   background-color: #dadada;
   background-image: url(assets/Nominativo_Singular_Adjetivo_neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ************* Plural ************* */
+
+.containerPlural {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 3px;
+  grid-template:
+    "0 A A A"
+    "0 B C D"
+    "E F F G"
+    "H I I I";
+  grid-template-columns: 25px 1fr 1fr 1fr;
+  grid-template-rows: 31px 19px 93px 93px;
+}
+
+.plural_blockA {
+  grid-area: A;
+  background-color: #e52428;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockB {
+  grid-area: B;
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockC {
+  grid-area: C;
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockD {
+  grid-area: D;
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockE {
+  grid-area: E;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockE p {
+  transform: rotate(-90deg);
+}
+
+.plural_blockF {
+  grid-area: F;
+  background-color: #f2f2f2;
+  background-image: url(assets/Nominativo_Plural_Substantivo_masculino_feminino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plural_blockG {
+  grid-area: G;
+  background-color: #f2f2f2;
+  background-image: url(assets/Nominativo_Plural_Substantivo_neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plural_blockH {
+  grid-area: H;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_blockH p {
+  transform: rotate(-90deg);
+}
+
+.plural_blockI {
+  grid-area: I;
+  background-color: #dadada;
+  background-image: url(assets/Nominativo_Plural_Adjetivo_masculino_feminino_neutro.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
