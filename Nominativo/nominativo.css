@@ -12,7 +12,7 @@
   display: flex;
   font-weight: 700;
   gap: 215px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #header h1 {
@@ -32,7 +32,7 @@
 /* ************* SIngular ************* */
 
 .container {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: grid;
   gap: 3px;
   grid-template:
@@ -44,7 +44,7 @@
   grid-template-rows: 31px 19px 93px 93px;
 }
 
-.blockA {
+.singular_titulo {
   grid-area: A;
   background-color: #e52428;
   color: white;
@@ -53,8 +53,7 @@
   align-items: center;
 }
 
-.blockB {
-  grid-area: B;
+.singular_Masc_Fem_Neu {
   background-color: #2d2c2c;
   font-size: 12px;
   font-weight: 500;
@@ -64,27 +63,6 @@
   align-items: center;
 }
 
-.blockC {
-  grid-area: C;
-  background-color: #2d2c2c;
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blockD {
-  grid-area: D;
-  background-color: #2d2c2c;
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .blockE {
   grid-area: E;
@@ -165,7 +143,7 @@
 /* ************* Plural ************* */
 
 .containerPlural {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: grid;
   gap: 3px;
   grid-template:
@@ -177,7 +155,7 @@
   grid-template-rows: 31px 19px 93px 93px;
 }
 
-.plural_blockA {
+.plural_block_A {
   grid-area: A;
   background-color: #e52428;
   color: white;
@@ -186,8 +164,8 @@
   align-items: center;
 }
 
-.plural_blockB {
-  grid-area: B;
+.plural_block_BR {
+
   background-color: #2d2c2c;
   font-size: 12px;
   font-weight: 500;
@@ -197,29 +175,7 @@
   align-items: center;
 }
 
-.plural_blockC {
-  grid-area: C;
-  background-color: #2d2c2c;
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.plural_blockD {
-  grid-area: D;
-  background-color: #2d2c2c;
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.plural_blockE {
+.plural_block_E {
   grid-area: E;
   background-color: #f2f2f2;
   font-size: 13px;
@@ -229,11 +185,11 @@
   align-items: center;
 }
 
-.plural_blockE p {
+.plural_block_E p {
   transform: rotate(-90deg);
 }
 
-.plural_blockF {
+.plural_block_F {
   grid-area: F;
   background-color: #f2f2f2;
   background-image: url(assets/Nominativo_Plural_Substantivo_masculino_feminino.svg);
@@ -241,7 +197,7 @@
   background-position: center;
 }
 
-.plural_blockG {
+.plural_block_G {
   grid-area: G;
   background-color: #f2f2f2;
   background-image: url(assets/Nominativo_Plural_Substantivo_neutro.svg);
@@ -249,7 +205,7 @@
   background-position: center;
 }
 
-.plural_blockH {
+.plural_block_H {
   grid-area: H;
   background-color: #f2f2f2;
   font-size: 13px;
@@ -259,14 +215,57 @@
   align-items: center;
 }
 
-.plural_blockH p {
+.plural_block_H p {
   transform: rotate(-90deg);
 }
 
-.plural_blockI {
+.plural_block_I {
   grid-area: I;
   background-color: #dadada;
   background-image: url(assets/Nominativo_Plural_Adjetivo_masculino_feminino_neutro.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* ************************ Pronomes Pessoais ************************ */
+
+.container_pronomes {
+  display: grid;
+  gap: 3px;
+  grid-template:
+    "A A A A A A A A A"
+    "B C D E F G H I J"
+    "K L M N O P Q R S";
+  grid-template-rows: 31px 20px 70px;
+}
+
+.pronome_block_A {
+  grid-area: A;
+  background-color: #e52428;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pronome_block_BR {
+  background-color: #2d2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pronome_block_PL {
+  background-color: #f2f2f2;
+
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 10, 10);
+  font-size: 12px;
+  font-weight: 500;
 }
