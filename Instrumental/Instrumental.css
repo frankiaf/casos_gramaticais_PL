@@ -82,7 +82,7 @@
   .blockF {
     grid-area: F;
     background-color: #f2f2f2;
-    background-image: url(assets/Nominativo_Singular_Substantivo_masculino.svg);
+    background-image: url(assets/Instrumental_Singular_Substantivo_Masculino.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -90,7 +90,7 @@
   .blockG {
     grid-area: G;
     background-color: #f2f2f2;
-    background-image: url(assets/Nominativo_Singular_Substantivo_feminino.svg);
+    background-image: url(assets/Instrumental_Singular_Substantivo_Feminino.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -98,7 +98,7 @@
   .blockH {
     grid-area: H;
     background-color: #f2f2f2;
-    background-image: url(assets/Nominativo_Singular_Substantivo_neutro.svg);
+    background-image: url(assets/Instrumental_Singular_Substantivo_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -120,7 +120,7 @@
   .blockJ {
     grid-area: J;
     background-color: #dadada;
-    background-image: url(assets/Nominativo_Singular_Adjetivo_masculino.svg);
+    background-image: url(assets/Instrumental_Singular_Adjetivo_Masculino.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -128,7 +128,7 @@
   .blockK {
     grid-area: K;
     background-color: #dadada;
-    background-image: url(assets/Nominativo_Singular_Adjetivo_feminino.svg);
+    background-image: url(assets/Instrumental_Singular_Adjetivo_Feminino.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -136,7 +136,7 @@
   .blockL {
     grid-area: L;
     background-color: #dadada;
-    background-image: url(assets/Nominativo_Singular_Adjetivo_neutro.svg);
+    background-image: url(assets/Instrumental_Singular_Adjetivo_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
