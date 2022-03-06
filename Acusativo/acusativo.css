@@ -304,7 +304,6 @@
 
 .pronome_block_PL {
   background-color: #f2f2f2;
-
   font-weight: 900;
   display: flex;
   justify-content: center;
@@ -312,4 +311,10 @@
   color: rgb(10, 10, 10);
   font-size: 12px;
   font-weight: 500;
+}
+
+.box_PL {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
