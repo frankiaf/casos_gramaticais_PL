@@ -192,7 +192,7 @@
   .plural_block_D {
     grid-area: D;
     background-color: #f2f2f2;
-    background-image: url(assets/Instrumental_Plural_Substantivo_Masc_Fem_Neutro.svg);
+    background-image: url(assets/Locativo_Plural_Substantivo_Masc_Fem_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -214,7 +214,7 @@
   .plural_block_F {
     grid-area: F;
     background-color: #dadada;
-    background-image: url(assets/Instrumental_Plural_Adjetivo_Masc_Fem_Neutro.svg);
+    background-image: url(assets/Locativo_Plural_Adjetivo_Masc_Fem_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
