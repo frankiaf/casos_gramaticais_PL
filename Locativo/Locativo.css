@@ -1,264 +1,321 @@
 #nominativeContainer {
-    width: 475px;
-    height: 750px;
-    padding: 20px;
-  }
-  
-  /* ************* Header ************* */
-  
-  #header {
-    width: 475px;
-    margin-left: 30px;
-    display: flex;
-    font-weight: 700;
-    gap: 115px;
-    margin-bottom: 15px;
-  }
-  
-  #header h1 {
-    font-size: 30px;
-  }
-  
-  .subtitulo {
-    font-size: 25px;
-    font-weight: 700;
-    text-align: right;
-  }
-  
-  #header h3 {
-    color: #706d6d;
-    font-size: 15px;
-  }
-  
-  /* ************* SIngular ************* */
-  
-  .container {
-    margin-bottom: 15px;
-    display: grid;
-    gap: 3px;
-    grid-template:
-      "0 A A A"
-      "0 B C D"
-      "E F G H"
-      "I J K L";
-    grid-template-columns: 25px 1fr 1fr 1fr;
-    grid-template-rows: 31px 19px 93px 93px;
-  }
-  
-  .singular_titulo {
-    grid-area: A;
-    background-color: #e52428;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .singular_Masc_Fem_Neu {
-    background-color: #2d2c2c;
-    font-size: 12px;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .blockE {
-    grid-area: E;
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .blockE p {
-    transform: rotate(-90deg);
-  }
-  
-  .blockF {
-    grid-area: F;
-    background-color: #f2f2f2;
-    background-image: url(assets/Instrumental_Singular_Substantivo_Masculino.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .blockG {
-    grid-area: G;
-    background-color: #f2f2f2;
-    background-image: url(assets/Instrumental_Singular_Substantivo_Feminino.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .blockH {
-    grid-area: H;
-    background-color: #f2f2f2;
-    background-image: url(assets/Instrumental_Singular_Substantivo_Neutro.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .blockI {
-    grid-area: I;
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .blockI p {
-    transform: rotate(-90deg);
-  }
-  
-  .blockJ {
-    grid-area: J;
-    background-color: #dadada;
-    background-image: url(assets/Instrumental_Singular_Adjetivo_Masculino.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .blockK {
-    grid-area: K;
-    background-color: #dadada;
-    background-image: url(assets/Instrumental_Singular_Adjetivo_Feminino.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .blockL {
-    grid-area: L;
-    background-color: #dadada;
-    background-image: url(assets/Instrumental_Singular_Adjetivo_Neutro.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  /* ************* Plural ************* */
-  
-  .containerPlural {
-    margin-bottom: 15px;
-    display: grid;
-    gap: 3px;
-    grid-template:
-      "0 A A A"
-      "0 B B B"
-      "C D D D"
-      "E F F F";
-    grid-template-columns: 25px 1fr 1fr 1fr;
-    grid-template-rows: 31px 19px 93px 93px;
-  }
-  
-  .plural_block_A {
-    grid-area: A;
-    background-color: #e52428;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .plural_block_BR {
-    grid-area: B;
-    background-color: #2d2c2c;
-    font-size: 12px;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .plural_block_C {
-    grid-area: C;
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .plural_block_C p {
-    transform: rotate(-90deg);
-  }
-  
-  .plural_block_D {
-    grid-area: D;
-    background-color: #f2f2f2;
-    background-image: url(assets/Locativo_Plural_Substantivo_Masc_Fem_Neutro.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .plural_block_E {
-    grid-area: E;
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .plural_block_E p {
-    transform: rotate(-90deg);
-  }
-  
-  .plural_block_F {
-    grid-area: F;
-    background-color: #dadada;
-    background-image: url(assets/Locativo_Plural_Adjetivo_Masc_Fem_Neutro.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  /* ************************ Pronomes Pessoais ************************ */
-  
-  .container_pronomes {
-    display: grid;
-    gap: 3px;
-    grid-template:
-      "A A A A A A A A A"
-      "B C D E F G H I J"
-      "K L M N O P Q R S";
-    grid-template-rows: 31px 20px 70px;
-  }
-  
-  .pronome_block_A {
-    grid-area: A;
-    background-color: #e52428;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .pronome_block_BR {
-    background-color: #2d2c2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  
-  .pronome_block_PL {
-    background-color: #f2f2f2;
-  
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(10, 10, 10);
-    font-size: 12px;
-    font-weight: 500;
-  }
-  
+  width: 475px;
+  height: 750px;
+  padding: 20px;
+}
+
+/* ************* Header ************* */
+
+#header {
+  width: 475px;
+  margin-left: 30px;
+  display: flex;
+  font-weight: 700;
+  gap: 115px;
+  margin-bottom: 15px;
+}
+
+#header h1 {
+  font-size: 30px;
+}
+
+.subtitulo {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: right;
+}
+
+#header h3 {
+  color: #706d6d;
+  font-size: 15px;
+}
+
+/* ************* SIngular ************* */
+
+.container {
+  margin-bottom: 3px;
+  display: grid;
+  gap: 3px;
+  grid-template:
+    "0 A A A"
+    "0 B C D"
+    "E F G H"
+    "I J K L";
+  grid-template-columns: 25px 1fr 1fr 1fr;
+  grid-template-rows: 31px 19px 77px 77px;
+}
+
+.singular_titulo {
+  grid-area: A;
+  background-color: #e52428;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singular_Masc_Fem_Neu {
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockE {
+  grid-area: E;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockE p {
+  transform: rotate(-90deg);
+}
+
+.blockF {
+  grid-area: F;
+  background-color: #f2f2f2;
+  background-image: url(assets/Locativo_Singular_Substantivo_Masculino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockG {
+  grid-area: G;
+  background-color: #f2f2f2;
+  background-image: url(assets/Locativo_Singular_Substantivo_Feminino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockH {
+  grid-area: H;
+  background-color: #f2f2f2;
+  background-image: url(assets/Locativo_Singular_Substantivo_Neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockI {
+  grid-area: I;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockI p {
+  transform: rotate(-90deg);
+}
+
+.blockJ {
+  grid-area: J;
+  background-color: #dadada;
+  background-image: url(assets/Locativo_Singular_Adjetivo_Masculino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockK {
+  grid-area: K;
+  background-color: #dadada;
+  background-image: url(assets/Locativo_Singular_Adjetivo_Feminino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockL {
+  grid-area: L;
+  background-color: #dadada;
+  background-image: url(assets/Locativo_Singular_Adjetivo_Neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ************* Consoantes Duras ************* */
+
+.consoantes_duras {
+  display: grid;
+  margin-bottom: 15px;
+  gap: 3px;
+  grid-template:
+    "A B C"
+    "E F G"
+    "H I J";
+  grid-template-columns: 25px 298px;
+  grid-template-rows: 20px 18px 18px;
+}
+
+.consoantes_duras_titulo {
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consoantes_nominativo {
+  word-spacing: 13.5px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consoantes_locativo {
+  word-spacing: 10px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consoantes_duras_titulo_esquerda {
+  background-color: #f2f2f2;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ************* Plural ************* */
+
+.containerPlural {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 15px;
+  grid-template:
+    "0 A A A"
+    "0 B B B"
+    "C D D D"
+    "E F F F";
+  grid-template-columns: 25px 1fr 1fr 1fr;
+  grid-template-rows: 31px 19px 77px 77px;
+}
+
+.plural_block_A {
+  grid-area: A;
+  background-color: #e52428;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_block_BR {
+  grid-area: B;
+  background-color: #2d2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_block_C {
+  grid-area: C;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_block_C p {
+  transform: rotate(-90deg);
+}
+
+.plural_block_D {
+  grid-area: D;
+  background-color: #f2f2f2;
+  background-image: url(assets/Locativo_Plural_Substantivo_Masc_Fem_Neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plural_block_E {
+  grid-area: E;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plural_block_E p {
+  transform: rotate(-90deg);
+}
+
+.plural_block_F {
+  grid-area: F;
+  background-color: #dadada;
+  background-image: url(assets/Locativo_Plural_Adjetivo_Masc_Fem_Neutro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ************************ Pronomes Pessoais ************************ */
+
+.container_pronomes {
+  display: grid;
+  gap: 3px;
+  grid-template:
+    "A A A A A A A A A"
+    "B C D E F G H I J"
+    "K L M N O P Q R S";
+  grid-template-rows: 31px 20px 70px;
+}
+
+.pronome_block_A {
+  grid-area: A;
+  background-color: #e52428;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pronome_block_BR {
+  background-color: #2d2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pronome_block_PL {
+  background-color: #f2f2f2;
+
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 10, 10);
+  font-size: 12px;
+  font-weight: 500;
+}
