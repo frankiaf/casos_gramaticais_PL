@@ -194,9 +194,9 @@
   gap: 3px;
   grid-template:
     "0 A A A"
-    "0 B C D"
-    "E F F G"
-    "H I I I";
+    "0 B C C"
+    "D E F F"
+    "G H H H";
   grid-template-columns: 25px 1fr 1fr 1fr;
   grid-template-rows: 31px 19px 93px 93px;
 }
@@ -220,8 +220,19 @@
   align-items: center;
 }
 
-.plural_block_E {
-  grid-area: E;
+.plural_block_Fem_Neutro_BR{
+    grid-area: C;
+    background-color: #2d2c2c;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plural_block_D {
+  grid-area: D;
   background-color: #f2f2f2;
   font-size: 13px;
   font-weight: 500;
@@ -230,14 +241,22 @@
   align-items: center;
 }
 
-.plural_block_E p {
+.plural_block_D p {
   transform: rotate(-90deg);
+}
+
+.plural_block_E {
+  grid-area: E;
+  background-color: #f2f2f2;
+  background-image: url(assets/Genitivo_Plural_Substantivo_Masculino.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .plural_block_F {
   grid-area: F;
   background-color: #f2f2f2;
-  background-image: url(assets/Acusativo_Plural_Substantivo_masculino_feminino.svg);
+  background-image: url(assets/Genitivo_Plural_Substantivo_Feminino_Neutro.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -245,14 +264,6 @@
 .plural_block_G {
   grid-area: G;
   background-color: #f2f2f2;
-  background-image: url(assets/Acusativo_Plural_Substantivo_neutro.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.plural_block_H {
-  grid-area: H;
-  background-color: #f2f2f2;
   font-size: 13px;
   font-weight: 500;
   display: flex;
@@ -260,14 +271,14 @@
   align-items: center;
 }
 
-.plural_block_H p {
+.plural_block_G p {
   transform: rotate(-90deg);
 }
 
-.plural_block_I {
-  grid-area: I;
+.plural_block_H {
+  grid-area: H;
   background-color: #dadada;
-  background-image: url(assets/Acusativo_Plural_Adjetivo_masc_fem_neutro.svg);
+  background-image: url(assets/Genitivo_Plural_Adjetivo_Masc_Fem_Neutro.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
