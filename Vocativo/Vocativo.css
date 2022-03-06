@@ -192,7 +192,7 @@
   .plural_block_F {
     grid-area: F;
     background-color: #f2f2f2;
-    background-image: url(assets/Nominativo_Plural_Substantivo_masculino_feminino.svg);
+    background-image: url(assets/Vocativo_Plural_Substantivo_Masculino_Feminino.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -200,7 +200,7 @@
   .plural_block_G {
     grid-area: G;
     background-color: #f2f2f2;
-    background-image: url(assets/Nominativo_Plural_Substantivo_neutro.svg);
+    background-image: url(assets/Vocativo_Plural_Substantivo_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -222,7 +222,7 @@
   .plural_block_I {
     grid-area: I;
     background-color: #dadada;
-    background-image: url(assets/Nominativo_Plural_Adjetivo_masculino_feminino_neutro.svg);
+    background-image: url(assets/Vocativo_Plural_Adjetivo_Masculino_Feminino_Neutro.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
