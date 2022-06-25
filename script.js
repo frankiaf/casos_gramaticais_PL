@@ -10,23 +10,23 @@ function acusativo() {
 }
 
 function instrumental() {
-  frameboard.setAttribute("src", "./Acusativo/acusativo.html");
+  frameboard.setAttribute("src", "Instrumental/Instrumental.html");
 }
 
 function genitivo() {
-  frameboard.setAttribute("src", "./Genitivo/genitivo.html");
+  frameboard.setAttribute("src", "./Genitivo/Genitivo.html");
 }
 
 function dativo() {
-  frameboard.setAttribute("src", "./Dativo/dativo.html");
+  frameboard.setAttribute("src", "./Dativo/Dativo.html");
 }
 
 function locativo() {
-  frameboard.setAttribute("src", "./Locativo/locativo.html");
+  frameboard.setAttribute("src", "./Locativo/Locativo.html");
 }
 
 function vocativo() {
-  frameboard.setAttribute("src", "./Vocativo/vocativo.html");
+  frameboard.setAttribute("src", "./Vocativo/Vocativo.html");
 }
 
 menu[0].addEventListener("click", nominativo);
