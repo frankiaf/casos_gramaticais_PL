@@ -10,7 +10,7 @@ function acusativo() {
 }
 
 function instrumental() {
-  frameboard.setAttribute("src", "./Instrumental/instrumental.html");
+  frameboard.setAttribute("src", "./Acusativo/acusativo.html");
 }
 
 function genitivo() {
