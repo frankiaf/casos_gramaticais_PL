@@ -2,31 +2,31 @@ const menu = document.querySelectorAll("#casesButtons");
 const frameboard = document.querySelector("#frameBoard");
 
 function nominativo() {
-  frameboard.setAttribute("src", "Nominativo/nominativo.html");
+  frameboard.setAttribute("src", "./Nominativo/nominativo.html");
 }
 
 function acusativo() {
-  frameboard.setAttribute("src", "Acusativo/acusativo.html");
+  frameboard.setAttribute("src", "./Acusativo/acusativo.html");
 }
 
 function instrumental() {
-  frameboard.setAttribute("src", "Instrumental/instrumental.html");
+  frameboard.setAttribute("src", "./Instrumental/instrumental.html");
 }
 
 function genitivo() {
-  frameboard.setAttribute("src", "Genitivo/genitivo.html");
+  frameboard.setAttribute("src", "./Genitivo/genitivo.html");
 }
 
 function dativo() {
-  frameboard.setAttribute("src", "Dativo/dativo.html");
+  frameboard.setAttribute("src", "./Dativo/dativo.html");
 }
 
 function locativo() {
-  frameboard.setAttribute("src", "Locativo/locativo.html");
+  frameboard.setAttribute("src", "./Locativo/locativo.html");
 }
 
 function vocativo() {
-  frameboard.setAttribute("src", "Vocativo/vocativo.html");
+  frameboard.setAttribute("src", "./Vocativo/vocativo.html");
 }
 
 menu[0].addEventListener("click", nominativo);
