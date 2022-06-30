@@ -1,65 +1,32 @@
 const menu = document.querySelectorAll("#casesButtons");
 const frameboard = document.querySelector("#frameBoard");
-const menuWhite = document.querySelector('.menuWhite')
+const menuWhite = document.querySelector(".menuWhite");
 
+// Função Construtora
 
-
-
-function nominativo() {
-    frameboard.setAttribute("src", "./Nominativo/nominativo.html");
-    menuWhite.style.marginTop =  '0px'
-    menu[0].style.backgroundColor = 'white';
-    menu[0].style.color = '#7d7676';
+function SelectMenu(link, altura) {
+  this.selecionar = function () {
+    frameboard.setAttribute("src", link);
+    menuWhite.style.marginTop = altura;
+  };
 }
 
-function acusativo() {
-  frameboard.setAttribute("src", "./Acusativo/acusativo.html");
-  menuWhite.style.marginTop =  '110px'
-  menu[1].style.backgroundColor = 'white';
-  menu[1].style.color = '#7d7676';
-}
+// Novas funções criadas a partir da função construtora
 
-function instrumental() {
-  frameboard.setAttribute("src", "Instrumental/Instrumental.html");
-  menuWhite.style.marginTop =  '220px'
-  menu[2].style.backgroundColor = 'white';
-  menu[2].style.color = '#7d7676';
-}
+const nominativo = new SelectMenu("./Nominativo/nominativo.html", "0px");
+const acusativo = new SelectMenu("./Acusativo/acusativo.html", "110px");
+const instrumental = new SelectMenu("./Instrumental/Instrumental.html","220px");
+const genitivo = new SelectMenu("./Genitivo/Genitivo.html", "330px");
+const dativo = new SelectMenu("./Dativo/Dativo.html", "440px");
+const locativo = new SelectMenu("./Locativo/Locativo.html", "550px");
+const vocativo = new SelectMenu("./Vocativo/Vocativo.html", "660px");
 
-function genitivo() {
-  frameboard.setAttribute("src", "./Genitivo/Genitivo.html");
-  menuWhite.style.marginTop =  '330px'
-  menu[2].style.backgroundColor = 'white';
-  menu[2].style.color = '#7d7676';
-}
+//Eventos de click
 
-function dativo() {
-  frameboard.setAttribute("src", "./Dativo/Dativo.html");
-  menuWhite.style.marginTop =  '440px'
-  menu[2].style.backgroundColor = 'white';
-  menu[2].style.color = '#7d7676';
-}
-
-function locativo() {
-  frameboard.setAttribute("src", "./Locativo/Locativo.html");
-  menuWhite.style.marginTop =  '550px'
-  menu[2].style.backgroundColor = 'white';
-  menu[2].style.color = '#7d7676';
-}
-
-function vocativo() {
-  frameboard.setAttribute("src", "./Vocativo/Vocativo.html");
-  menuWhite.style.marginTop =  '660px'
-  menu[2].style.backgroundColor = 'white';
-  menu[2].style.color = '#7d7676';
-}
-
-menu[0].addEventListener("click", nominativo);
-menu[1].addEventListener("click", acusativo);
-menu[2].addEventListener("click", instrumental);
-menu[3].addEventListener("click", genitivo);
-menu[4].addEventListener("click", dativo);
-menu[5].addEventListener("click", locativo);
-menu[6].addEventListener("click", vocativo); 
-
-
+menu[0].addEventListener("click", nominativo.selecionar);
+menu[1].addEventListener("click", acusativo.selecionar);
+menu[2].addEventListener("click", instrumental.selecionar);
+menu[3].addEventListener("click", genitivo.selecionar);
+menu[4].addEventListener("click", dativo.selecionar);
+menu[5].addEventListener("click", locativo.selecionar);
+menu[6].addEventListener("click", vocativo.selecionar);
